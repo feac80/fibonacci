@@ -1,0 +1,11 @@
+form{
+    text-align: center;
+    margin: auto auto;
+}
+p{
+    word-wrap: break-word;
+}
+#fibNum{
+    font-size: 26px;
+    text-align: center;
+}

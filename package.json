@@ -1,0 +1,11 @@
+{
+  "name": "fibonnaci",
+  "version": "1.0.0",
+  "description": "this app calculate the fibonacci sequence",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Frank Eduardo Araque Cadenas",
+  "license": "MIT"
+}
