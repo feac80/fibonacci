@@ -18,15 +18,15 @@
             
             <form  onsubmit="event.preventDefault()">
                 <div class="form-group " >
-                   <label for="number">Insert a number:</label>
-                     <input type="text" id="number" name="number"required>
+                   <label  for="number">Insert a number:</label>
+                   <input type="text" id="number" name="number"required>
+                   <small id="emailHelp" class="form-text text-muted">Enter an integer number grater than 0. </small>
                 </div>
                 <div class="form-group text-center">
-                    <input class="btn btn-primary" onclick="calculateFibonnaci()" type="submit" value="Calculate the Fibonnaci number" data-toggle="modal" data-target="#exampleModalCenter">
+                    <input class="btn btn-primary form-control" onclick="calculateFibonnaci()" type="submit" value="Calculate the Fibonnaci number" data-toggle="modal" data-target="#exampleModalCenter">
                 </div>
             </form>
         </div>
-        
     </div>
 <!-- Modal -->
 <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">

@@ -1,15 +1,16 @@
 
 const fibonnaci = (number) => {
-    var start = new Date().getTime();
+ 
     function printDom(){
-        let seq = document.getElementById("sequence");
+        let seq = document.getElementById("sequence"); 
         seq.innerHTML="";
         seq.innerHTML=elements; 
     }
     
 
-  var elements =[0,1];
+    var elements =[0,1];
 if (number <=1){
+    elements= number;
     printDom();
   
     return number; 
@@ -27,12 +28,20 @@ if (number <=1){
 }
 function calculateFibonnaci() {
 
-    var number = Number(document.getElementById("number").value);
-  let calculatedNumber =  fibonnaci (number);
+ var number = Number(document.getElementById("number").value);
+ if (number == ""){
 
-  var fibNum = (document.getElementById("fibNum"));
+   var fibNum = (document.getElementById("fibNum"));
+   fibNum.innerHTML="Please enter a number " ;
 
-  fibNum.innerHTML="Fibonacci number:" + calculatedNumber;
+ }else{
+
+   let calculatedNumber =  fibonnaci (number);
+   var fibNum = (document.getElementById("fibNum"));
+   fibNum.innerHTML="Fibonacci number:" + calculatedNumber;
+   
+ }
+ 
 }
 
 
